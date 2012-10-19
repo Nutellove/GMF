@@ -1,5 +1,8 @@
 GMF::Application.routes.draw do
 
+  # Root == '/'
+  root :to => 'character#show'
+
   get "character/create"
 
   get "character/show"
@@ -8,12 +11,8 @@ GMF::Application.routes.draw do
 
   get "character/remove"
 
-  match '/' => 'character#show'
-
   namespace :character do
-
     #match '/' => ''
-
   end
 
   # The priority is based upon order of creation:
