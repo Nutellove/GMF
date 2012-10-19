@@ -1,16 +1,27 @@
-*.rbc
-*.sassc
-.sass-cache
-capybara-*.html
-.rspec
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Ignore bundler config
 /.bundle
-/vendor/bundle
-/log/*
-/tmp/*
+
+# Ignore the default SQLite database.
 /db/*.sqlite3
-/public/system/*
-/coverage/
-/spec/tmp/*
-**.orig
-rerun.txt
-pickle-email-*.html
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Stoopid Windows© files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# KDE
+.directory
+
+# Eclipse-generated files
+.settings/*
+.project
+.buildpath
+
+# PhpStorm
+.idea/*
