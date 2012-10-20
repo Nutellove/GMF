@@ -3,6 +3,7 @@ class CharacterController < ApplicationController
   end
 
   def show
+    # wut ?
   end
 
   def edit
