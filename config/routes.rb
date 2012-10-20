@@ -1,12 +1,12 @@
 GMF::Application.routes.draw do
 
-  get "character/create"
+#  get "character/create"
 
-  get "character/show"
+#  get "character/show"
 
-  get "character/edit"
+#  get "character/edit"
 
-  get "character/remove"
+#  get "character/remove"
 
   match '/' => 'character#show'
 
