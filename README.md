@@ -1,6 +1,23 @@
 GMF
 ===
 
+TODO, remove when it's done.
+
+Alpha
+
+User registration
+User has at least one Player.
+Registration of User creates Player.
+Unit creation by the Player
+Player can have several Units
+Player must have at least one Unit
+Map (to do together, SOLIDly)
+Unit is Mappable
+Scenes :
+    - Observation (map) : look at a map
+    - Introspection (profile) : look at an unit
+Units are Mobile
+
 ------------------------------------------------------------------------------------------------------------------------
 
 CYNERGIÆ
@@ -18,10 +35,23 @@ INSTALL NOTES
 
 CD to your project directory and then clone the repo :
 
-    $ git clone git@github.com:Nutellove/Cynergiae.git cynergiae
+    $ git clone git@github.com:Nutellove/GMF.git
 
 
 ------------------------------------------------------------------------------------------------------------------------
+
+CheatSheet
+==========
+
+    $ rails
+
+    $ bundle install
+
+    $ rake db:migrate
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 Git CheatSheet
 ==============
