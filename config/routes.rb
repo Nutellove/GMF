@@ -1,15 +1,16 @@
 GMF::Application.routes.draw do
 
+
   # Root == '/'
   root :to => 'character#show'
 
   get "character/create"
 
-  get "character/show"
+#  get "character/show"
 
-  get "character/edit"
+#  get "character/edit"
 
-  get "character/remove"
+#  get "character/remove"
 
   # Authentication with Devise
   devise_for :users, :class_name => "Gmf::Component::User"
