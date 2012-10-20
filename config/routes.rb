@@ -11,9 +11,8 @@ GMF::Application.routes.draw do
 
   get "character/remove"
 
-  namespace :character do
-    #match '/' => ''
-  end
+  # Authentication with Devise
+  devise_for :users, :class_name => "Gmf::Component::User"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
