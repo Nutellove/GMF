@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121020165231) do
+ActiveRecord::Schema.define(:version => 20121021160537) do
 
   create_table "gmf_characters", :force => true do |t|
     t.string   "name"
@@ -40,5 +40,16 @@ ActiveRecord::Schema.define(:version => 20121020165231) do
   add_index "gmf_component_users", ["confirmation_token"], :name => "index_gmf_component_users_on_confirmation_token", :unique => true
   add_index "gmf_component_users", ["email"], :name => "index_gmf_component_users_on_email", :unique => true
   add_index "gmf_component_users", ["reset_password_token"], :name => "index_gmf_component_users_on_reset_password_token", :unique => true
+
+  create_table "gmf_core_players", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "gmf_core_units", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end
