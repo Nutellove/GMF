@@ -1,18 +1,18 @@
 GMF::Application.routes.draw do
 
-  get "player/show"
 
-  get "player/create"
-
-  get "player/update"
-
-  get "player/delete"
 
   # Root == '/'
   root :to => 'gmf/core/player#show'
 
   # Authentication with Devise
   devise_for :users, :class_name => "Gmf::Component::User"
+
+  # Player CRUD
+  get "gmf/core/player/show"
+  get "gmf/core/player/create"
+  get "gmf/core/player/update"
+  get "gmf/core/player/delete"
 
 
 

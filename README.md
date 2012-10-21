@@ -1,23 +1,6 @@
 GMF
 ===
 
-TODO, remove when it's done.
-
-Alpha
-
-User registration
-User has at least one Player.
-Registration of User creates Player.
-Unit creation by the Player
-Player can have several Units
-Player must have at least one Unit
-Map (to do together, SOLIDly)
-Unit is Mappable
-Scenes :
-    - Observation (map) : look at a map
-    - Introspection (profile) : look at an unit
-Units are Mobile
-
 ------------------------------------------------------------------------------------------------------------------------
 
 CYNERGIÆ
