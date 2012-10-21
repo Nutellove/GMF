@@ -1,6 +1,11 @@
 require 'test_helper'
 
 class Gmf::Core::PlayerControllerTest < ActionController::TestCase
+
+  #before do
+  #  sign_in :user, @user
+  #end
+
   test "should get show" do
     get :show
     assert_response :success

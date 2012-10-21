@@ -1,13 +1,25 @@
 source 'https://rubygems.org'
 
+# Rails
 gem 'rails', '3.2.8'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# Database
 gem 'sqlite3'
 
+# JSON
 gem 'json'
+
+# Mootools, 'cause it rocks !
+gem 'mootools-rails', '~> 1.0.1'
+
+# User authentication
+gem 'devise'
+
+
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,14 +33,14 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-# Using mootools, 'cause it rocks !
-gem 'mootools-rails', '~> 1.0.1'
-
-# Cucumber for testing
+# Gems used only for tests
 group :test do
+  # Cucumber for testing/featuring
   gem 'cucumber-rails', :require => false
-  # database_cleaner is not required, but highly recommended
+  # Database Cleaner is not required, but highly recommended
   gem 'database_cleaner'
+  # Benchmarks
+  gem 'ruby-prof'
 end
 
 
@@ -47,5 +59,3 @@ end
 # To use debugger
 # gem 'ruby-debug'
 
-# User authentication
-gem 'devise'
