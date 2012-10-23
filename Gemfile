@@ -17,7 +17,9 @@ gem 'mootools-rails', '~> 1.0.1'
 # User authentication
 gem 'devise'
 
-
+# Cucumber documentation viewer
+gem 'diff-lcs', :require => false
+gem 'cucumber_fm-core', '0.1', :require => 'cucumber_feature_manager'
 
 
 
