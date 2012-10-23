@@ -27,8 +27,10 @@ class Documentation::AssetsController < Documentation::ApplicationController
     case file_path
       when /js$/
         "application/x-javascript"
-      when /(css|less|otf)$/
+      when /(css|less)$/
         "text/css"
+      when /(otf)$/
+        "font/opentype"
       when /(jpg|png)$/
         "image/#{file_extension}"
       else

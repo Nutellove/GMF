@@ -99,7 +99,7 @@ class Documentation::FeaturesController < Documentation::ApplicationController
   end
 
   # TODO move this methods to feature
-  
+
   def new_file_name
     params[:name].gsub(/[^a-zA-Z0-9]/, '_')
   end
@@ -116,8 +116,8 @@ class Documentation::FeaturesController < Documentation::ApplicationController
 
   def filename_invalid?
     (params[:name].blank? or params[:name].size < 4) ?
-            flash[:error] = 'File name too short, at least 4 alphanumeric characters' :
-            false
+        flash[:error] = 'File name too short, at least 4 alphanumeric characters' :
+        false
   end
 
 end
