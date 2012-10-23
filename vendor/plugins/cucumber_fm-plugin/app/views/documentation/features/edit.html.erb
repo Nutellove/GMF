@@ -126,7 +126,7 @@
         });
 
     <% if params.has_key?('query') %>
-    <%= "scrollToFirstMatchingLine('#{escape_javascript(params['query'])}');" %>
+        scrollToFirstMatchingLine('<%= "#{escape_javascript(params['query'])}" %>');
     <% end %>
     };
 
