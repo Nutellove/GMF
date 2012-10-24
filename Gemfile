@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
 # Rails
-gem 'rails', '3.2.8'
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'rails', '3.2.8' # :git => 'git://github.com/rails/rails.git' for edge
 
 # Database
 gem 'sqlite3'
@@ -11,31 +9,31 @@ gem 'sqlite3'
 # JSON
 gem 'json'
 
-# Mootools, 'cause it rocks !
+# Mootools, because it rocks !
 gem 'mootools-rails', '~> 1.0.1'
 
-# User authentication
+# User Authentication
 gem 'devise'
 
-# Cucumber documentation viewer
+# Cucumber Feature Manager
 gem 'diff-lcs', :require => false
 gem 'cucumber_fm-core', '0.1', :require => 'cucumber_feature_manager'
 
 
 
-# Gems used only for assets and not required
-# in production environments by default.
+# Gems used only for assets and not required in production environments by default.
 group :assets do
+  # SASS
   gem 'sass-rails',   '~> 3.2.3'
+  # COFFEE
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platforms => :ruby
-
+  # ???
+  gem 'therubyracer', :platforms => :ruby # See https://github.com/sstephenson/execjs#readme
+  # ???
   gem 'uglifier', '>= 1.0.3'
 end
 
-# Gems used only for tests
+# Gems used only for tests and not required in production environments by default.
 group :test do
   # Cucumber for testing/featuring
   gem 'cucumber-rails', :require => false
